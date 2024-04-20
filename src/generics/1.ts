@@ -15,3 +15,5 @@ async function fetchData(url: string): Promise<Response> {
 }
 // Типізуйте асинхронну функцію fetchData, яка приймає URL ресурсу та повертає об'єкт з даними. Використовуйте Generics для
 // типізації повернутих даних.
+
+console.log(fetchData(""));
