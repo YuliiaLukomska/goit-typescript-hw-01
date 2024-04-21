@@ -19,6 +19,7 @@ interface ResponseObject {
 async function getObject() {
   try {
     const data = await fetchData<ResponseObject>("");
+    // тут data - це і є об'єкт типу ResponseObject
     console.log(data);
   } catch (error) {
     console.log(error);
