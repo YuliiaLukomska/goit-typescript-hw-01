@@ -1,3 +1,15 @@
+type Address = {
+  city: string;
+  country: string;
+};
+
+interface User {
+  name: string;
+  age: number;
+  email: string;
+  address?: Address;
+}
+
 const mango: User = {
   name: "Mango",
   age: 30,
@@ -13,15 +25,3 @@ const poly: User = {
   age: 30,
   email: "john@example.com",
 };
-
-type Address = {
-  city: string;
-  country: string;
-};
-
-interface User {
-  name: string;
-  age: number;
-  email: string;
-  address?: Address;
-}
